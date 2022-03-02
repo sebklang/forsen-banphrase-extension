@@ -1,0 +1,17 @@
+{
+    "name": "Forsen Banphrase Checker",
+    "description": "Check if a phrase is banned in forsen's chat",
+    "version": "1.0",
+    "manifest_version": 3,
+    "host_permissions": [
+        "https://forsen.tv/api/v1/banphrases/test"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "32": "/images/32.png",
+        "48": "/images/48.png",
+        "128": "/images/128.png"
+    }
+}
