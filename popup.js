@@ -39,7 +39,7 @@ function submit() {
         }
         
         else if (http.readyState === 4 && http.status !== 200) {
-            resultParagraph.innerHTML = "Error: check your internet or paja shut down api xd";
+            resultParagraph.innerHTML = "Error: check your internet or go to extension settings and allow access to forsen.tv";
             resultParagraph.style.color = "black";
             console.log("http.status=" + http.status);
         }
