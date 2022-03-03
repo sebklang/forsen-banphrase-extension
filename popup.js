@@ -25,11 +25,11 @@ function submit() {
             var response = JSON.parse(http.responseText);
             console.log(response);
             if (response.banned === true) {
-                resultParagraph.innerHTML = "Banned! :(";
+                resultParagraph.innerHTML = "Banned! <img src=\"/images/FeelsBadMan.png\">";
                 resultParagraph.style.color = "red";
             }
             else if (response.banned === false) {
-                resultParagraph.innerHTML = "Not banned! :)";
+                resultParagraph.innerHTML = "Not banned! <img src=\"/images/FeelsGoodMan.png\">";
                 resultParagraph.style.color = "green";
             }
             else {
