@@ -9,7 +9,7 @@ messageBox.addEventListener("keypress", function(event) {
         event.preventDefault();
     	submit();
     }
-})
+});
 
 function submit() {
     const resultParagraph = document.getElementById("result");
@@ -45,9 +45,8 @@ function submit() {
         }
     };
 
-    const message = document.getElementById("message");
     const data = {
-        message: message.value
+        message: messageBox.value
     };
 
     http.send(JSON.stringify(data));
