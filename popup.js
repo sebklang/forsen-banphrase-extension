@@ -13,7 +13,7 @@ messageBox.addEventListener("keypress", function(event) {
 
 function submit() {
     const resultParagraph = document.getElementById("result");
-    resultParagraph.innerHTML = "Loading ...";
+    resultParagraph.innerHTML = "<img src=\"/images/FeelsOkayMan.png\"> Loading ...";
     resultParagraph.style.color = "black";
 
     const http = new XMLHttpRequest();
@@ -25,11 +25,11 @@ function submit() {
             var response = JSON.parse(http.responseText);
             console.log(response);
             if (response.banned === true) {
-                resultParagraph.innerHTML = "Banned! <img src=\"/images/FeelsBadMan.png\">";
+                resultParagraph.innerHTML = "<img src=\"/images/FeelsBadMan.png\"> Banned!";
                 resultParagraph.style.color = "red";
             }
             else if (response.banned === false) {
-                resultParagraph.innerHTML = "Not banned! <img src=\"/images/FeelsGoodMan.png\">";
+                resultParagraph.innerHTML = "<img src=\"/images/FeelsGoodMan.png\"> Not banned!";
                 resultParagraph.style.color = "green";
             }
             else {
