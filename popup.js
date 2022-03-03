@@ -33,7 +33,7 @@ function submit() {
                 resultParagraph.style.color = "green";
             }
             else {
-                resultParagraph.innerHTML = "Error: response did not contain 'banned' field";
+                resultParagraph.innerHTML = "Error: response is malformed";
                 resultParagraph.style.color = "black";
             }
         }
