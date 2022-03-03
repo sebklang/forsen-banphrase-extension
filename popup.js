@@ -1,17 +1,17 @@
 // TODO add resultParagraph reset function (color and text) and show timeout duration on banphrases
 
 const checkBanphraseBtn = document.getElementById("checkBanphraseBtn");
-checkBanphraseBtn.addEventListener("click", submitted);
+checkBanphraseBtn.addEventListener("click", submit);
 
 const messageBox = document.getElementById("message");
 messageBox.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
-    	submitted();
+    	submit();
     }
 })
 
-function submitted() {
+function submit() {
     const resultParagraph = document.getElementById("result");
     resultParagraph.innerHTML = "Loading ...";
     resultParagraph.style.color = "black";
